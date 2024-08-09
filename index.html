@@ -22,36 +22,52 @@
         <p>You <em>know</em> you want to.</p>
 
         <form action = "example.com/path" method = "post">
+            <div class="form">
             <legend>Let's do this!</legend>
 
             <section class = "textInputs">
             <div class = "leftColumn">
-                <label for = "first_name">FIRST NAME</label>
-                <input type = "text" id = "first_name" name = "first_name" placeholder = "Thor" required>
+                
+                <div class="input">
+                    <label for = "first_name">FIRST NAME</label>
+                    <input type = "text" id = "first_name" name = "first_name" placeholder = "Thor" required>
+                </div>
 
-                <label for = "email">EMAIL</label>
-                <input type = "email" id = "email" name = "email" required>
+                <div class="input">
+                    <label for = "email">EMAIL</label>
+                    <input type = "email" id = "email" name = "email" required>
+                </div>
 
-                <label for = "password">PASSWORD</label>
-                <input type = "password" id = "password" name = "password" required>
+                <div class="input">
+                    <label for = "password">PASSWORD</label>
+                    <input type = "password" id = "password" name = "password" minlength="8" required>
+                </div>
             </div>  
 
             <div class = "rightColumn">
-                <label for = "last_name">LAST NAME</label>
-                <input type = "text" id = "last_name" name = "last_name" placeholder = "Odinson" required>
+                <div class="input">
+                    <label for = "last_name">LAST NAME</label>
+                    <input type = "text" id = "last_name" name = "last_name" placeholder = "Odinson" required>
+                </div>
 
-                <label for = "phone_number">PHONE NUMBER</label>
-                <input type = "tel" id = "phone_number" name = "phone_number" required>
+                <div class="input">
+                    <label for = "phone_number">PHONE NUMBER</label>
+                    <input type = "tel" id = "phone_number" name = "phone_number" required>
+                </div>
 
-                <label for="confirm_password">CONFIRM PASSWORD</label>
-                <input type = "password" id = "confirm_password" name = "confirm_password" required>
+                <div class="input">
+                    <label for="confirm_password">CONFIRM PASSWORD</label>
+                    <input type = "password" id = "confirm_password" name = "confirm_password" minlength="8" required>
+                </div>
             </div>
             </section>
-        </form>
+        </div>
+        
 
-        <button>Create Account</button>   
+        <button type = "submit">Create Account</button>   
+    </form>
 
-        <p>Already have an account? Log in</p>
+        <p>Already have an account? <a href="">Log in</a></p>
     </div>
 
     
